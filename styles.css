@@ -1,0 +1,223 @@
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar input[type="text"] {
+    float: left;
+    padding: 10px;
+    margin: 8px 16px;
+    font-size: 1em;
+    border: none;
+    width: 200px;
+}
+
+.navbar button {
+    float: left;
+    padding: 10px 16px;
+    margin: 8px 16px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #ddd;
+}
+
+.home-page {
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1463839346397-8e9946845e6d?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    opacity: 1; 
+}
+
+.home-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-page p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: coral;
+}
+
+
+
+.home-page input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.home-page button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.home-page button:hover {
+    background-color: #ddd;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results .result-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    
+}
+
+
+/* About page */
+.about-us {
+    padding: 50px 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Team Members */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Contact page */
+
+.contact-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.contact-us button:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.result-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
